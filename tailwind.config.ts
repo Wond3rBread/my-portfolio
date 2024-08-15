@@ -13,6 +13,9 @@ export default {
   darkMode: 'class',
   theme: {
     extend: {
+      fontFamily: {
+        asap: ['"Asap Condensed"', 'sans-serif'],
+      },
       // https://vercel.com/design/color
       colors: {
         gray: colors.zinc,

@@ -1,4 +1,5 @@
 import '#/styles/globals.css';
+import '@fontsource/asap-condensed';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,7 +25,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="[color-scheme:dark]">
+    <html lang="en" className=" font-asap">
       <body className="">
         <div className="">{children}</div>
       </body>
