@@ -1,4 +1,5 @@
 import { NavBar } from '#/components/medium/navbar';
+import { Sidebar } from '#/components/medium/sidebar';
 import '#/styles/globals.css';
 import '@fontsource/asap-condensed';
 import { Metadata } from 'next';
@@ -27,8 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className=" font-asap">
-      <body className="">
+      <body className=" bg-background">
         <NavBar />
+        <Sidebar/>
         <div className="">{children}</div>
       </body>
     </html>

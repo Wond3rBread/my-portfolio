@@ -39,7 +39,7 @@ export const NavBar = () => {
   return (
     <nav className="top-0 z-50 flex w-full items-center justify-between bg-background px-4 shadow-lg lg:px-10">
       <Link href="/" legacyBehavior>
-        <p className="my-5 w-40 cursor-pointer py-4 text-text transition duration-300 hover:scale-105">
+        <p className="my-5 w-40 text-2xl font-semibold cursor-pointer py-4 text-text transition duration-300 hover:scale-105">
           Bengt Rotheim
         </p>
       </Link>
@@ -64,7 +64,7 @@ export const NavBar = () => {
             >
               {index === 4 ? (
                 <a href={`#${id}`} onClick={(e) => smoothScrollTo(e, id)}>
-                  <button className="to-accent-blue-dark w-24 rounded-2xl bg-gradient-to-r from-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out hover:scale-105 hover:bg-accent-dark">
+                  <button className="to-accent-blue-dark w-24 rounded-xl bg-gradient-to-r from-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out hover:scale-105 hover:bg-accent-dark">
                     Contact
                   </button>
                 </a>
@@ -89,7 +89,7 @@ export const NavBar = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="w-20 rounded-2xl border-2 border-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out  hover:border-accent-dark hover:bg-accent-dark">
+            <button className="w-20 rounded-xl border-2 border-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out  hover:border-accent-dark hover:bg-accent-dark">
               CV
             </button>
           </a>

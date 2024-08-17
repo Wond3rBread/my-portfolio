@@ -3,6 +3,7 @@ import Link from 'next/link';
 import bg from 'assets/mountainrangebg.svg';
 import ColorPalette from '#/components/ui/palette';
 import { NameHello } from '#/components/small/nameHello';
+import { About } from '#/components/medium/about';
 
 export default function Page() {
   return (
@@ -33,14 +34,22 @@ export default function Page() {
     //   </a>
     // </div>
     // </div>
-    <div className=" bg-background  h-screen">
+    <div className="">
       {/* Landing page start */}
-
-      <NameHello />
+      <div className="flex h-screen items-center justify-center bg-background">
+        <NameHello />
+      </div>
 
       {/* Landing page finish */}
 
-      
+      {/* About page start  */}
+
+      <div className=' h-screen bg-card-bg flex items-center justify-center'>
+        <About />
+      </div>
+
+      {/* About page finish */}
+
       {/* <ColorPalette /> */}
     </div>
   );

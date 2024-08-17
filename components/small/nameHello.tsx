@@ -3,13 +3,13 @@ import React from 'react';
 export const NameHello = () => {
   return (
     <div>
-      <p className=" text-text text-2xl">Bengt Andreas Rotheim</p>
-      <p className=" text-text text-7xl font-semibold">
+      <h2 className=" text-text text-3xl">Bengt Andreas Rotheim</h2>
+      <h1 className=" text-text text-9xl font-semibold">
         Hello{' '}
         <span className=" text-accent-blue font-bold">
           <u>World!</u>
         </span>
-      </p>
+      </h1>
     </div>
   );
 };
