@@ -1,3 +1,4 @@
+import { NavBar } from '#/components/medium/navbar';
 import '#/styles/globals.css';
 import '@fontsource/asap-condensed';
 import { Metadata } from 'next';
@@ -27,6 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en" className=" font-asap">
       <body className="">
+        <NavBar />
         <div className="">{children}</div>
       </body>
     </html>

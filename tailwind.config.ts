@@ -6,6 +6,7 @@ export default {
     './app/**/*.{js,ts,jsx,tsx,mdx}',
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './ui/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx}',
   ],
   future: {
     hoverOnlyWhenSupported: true,
@@ -18,6 +19,16 @@ export default {
       },
       // https://vercel.com/design/color
       colors: {
+        //My own colors:
+        background: '#121212',
+        text: '#E0E0E0',
+        'accent-blue': '#3498db',
+        'accent-dark': '#2980b9',
+        'card-bg': '#1C1C1C',
+        border: '#333333',
+        'link-hover': '#5DADE2',
+        error: '#e74c3c',
+        // Finish
         gray: colors.zinc,
         'gray-1000': 'rgb(17,17,19)',
         'gray-1100': 'rgb(10,10,11)',
