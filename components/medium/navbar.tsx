@@ -39,7 +39,7 @@ export const NavBar = () => {
   return (
     <nav className="top-0 z-50 flex w-full items-center justify-between bg-background px-4 shadow-lg lg:px-10">
       <Link href="/" legacyBehavior>
-        <p className="my-5 w-40 text-2xl font-semibold cursor-pointer py-4 text-text transition duration-300 hover:scale-105">
+        <p className="my-5 w-40 cursor-pointer py-4 text-2xl font-semibold text-text transition duration-300 hover:scale-105">
           Bengt Rotheim
         </p>
       </Link>
@@ -55,31 +55,27 @@ export const NavBar = () => {
           isOpen ? 'top-20' : 'top-[-490px] xl:top-0'
         }`}
       >
-        {['about', 'skills', 'experience', 'student', 'contact'].map(
-          (id, index) => (
-            <li
-              key={index}
-              className="relative cursor-pointer py-2 text-text transition-colors duration-300 hover:text-accent-blue xl:py-0"
-              onClick={closeMenu}
-            >
-              {index === 4 ? (
-                <a href={`#${id}`} onClick={(e) => smoothScrollTo(e, id)}>
-                  <button className="to-accent-blue-dark w-24 rounded-xl bg-gradient-to-r from-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out hover:scale-105 hover:bg-accent-dark">
-                    Contact
-                  </button>
-                </a>
-              ) : (
-                <a href={`#${id}`} onClick={(e) => smoothScrollTo(e, id)}>
-                  {
-                    ['About', 'Skills', 'Experience', 'Student', 'Contact'][
-                      index
-                    ]
-                  }
-                </a>
-              )}
-            </li>
-          ),
-        )}
+        {['about', 'skills', 'experience', 'student'].map((id, index) => (
+          <li
+            key={index}
+            className="relative cursor-pointer   py-2 text-text transition-colors duration-300 after:absolute after:bottom-0 after:left-0 after:h-1 after:w-0 after:bg-accent-blue after:transition-all after:duration-300 hover:text-accent-blue hover:after:w-full xl:py-0 "
+            onClick={closeMenu}
+          >
+            <a href={`#${id}`} onClick={(e) => smoothScrollTo(e, id)}>
+              {['About', 'Skills', 'Experience', 'Student'][index]}
+            </a>
+          </li>
+        ))}
+        <li
+          className="relative cursor-pointer py-2 text-text transition-colors duration-300 hover:text-accent-blue xl:py-0"
+          onClick={closeMenu}
+        >
+          <a href={'#contact'} onClick={(e) => smoothScrollTo(e, '#contact')}>
+            <button className="to-accent-blue-dark w-24 rounded-xl bg-gradient-to-r from-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-500 ease-in-out hover:scale-105 hover:bg-accent-dark">
+              Contact
+            </button>
+          </a>
+        </li>
         <li
           className="relative cursor-pointer py-2 text-text transition-colors duration-300 hover:text-accent-blue xl:py-0"
           onClick={closeMenu}
