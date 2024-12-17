@@ -1,9 +1,11 @@
+'use client';
 import { demos } from '#/lib/demos';
 import Link from 'next/link';
 import bg from 'assets/mountainrangebg.svg';
 import ColorPalette from '#/components/ui/palette';
 import { NameHello } from '#/components/small/nameHello';
 import { About } from '#/components/medium/about';
+import BackgroundCanvas from '#/components/medium/backgroundCanvas';
 
 export default function Page() {
   return (
@@ -36,15 +38,20 @@ export default function Page() {
     // </div>
     <div className="">
       {/* Landing page start */}
-      <div className="flex h-screen items-center justify-center bg-background">
-        <NameHello />
+      <div className="flex h-screen items-center  justify-center overflow-hidden bg-background">
+        <div className=" z-10 ">
+          <NameHello />
+        </div>
+        <BackgroundCanvas />
       </div>
-
       {/* Landing page finish */}
 
       {/* About page start  */}
 
-      <div className=' h-screen bg-card-bg flex items-center justify-center'>
+      <div
+        id="about"
+        className=" flex h-screen items-center justify-center bg-card-bg"
+      >
         <About />
       </div>
 

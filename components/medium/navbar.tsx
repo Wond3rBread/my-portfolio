@@ -37,7 +37,7 @@ export const NavBar = () => {
   };
 
   return (
-    <nav className="top-0 z-50 flex w-full items-center justify-between bg-background px-4 shadow-lg lg:px-10">
+    <nav className="absolute top-0 z-50 flex w-full items-center justify-between px-4  lg:px-10">
       <Link href="/" legacyBehavior>
         <p className="my-5 w-40 cursor-pointer py-4 text-2xl font-semibold text-text transition duration-300 hover:scale-105">
           Bengt Rotheim
