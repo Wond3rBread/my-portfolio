@@ -80,11 +80,7 @@ export const NavBar = () => {
           className="relative cursor-pointer py-2 text-text transition-colors duration-300 hover:text-accent-blue xl:py-0"
           onClick={closeMenu}
         >
-          <a
-            href="/path-to-your-cv.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="/cv.pdf" target="_blank" rel="noopener noreferrer">
             <button className="w-20 rounded-xl border border-accent-blue px-3 py-3 text-lg font-semibold text-text transition duration-300 ease-in-out  hover:border-blue-600 hover:bg-bgSecondary">
               CV
             </button>
