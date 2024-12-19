@@ -78,24 +78,29 @@ class Particle implements ParticleProps {
         let force = (mouse.radius - distance) / mouse.radius;
         let directionX = forceDirectionX * force * this.density;
         let directionY = forceDirectionY * force * this.density;
-        this.velocityX -= directionX;
-        this.velocityY -= directionY;
-      } else {
-        // Reset to base velocity when outside radius
-        if (this.velocityX < 0) {
-          this.velocityX = -this.baseVelocityX;
-        } else {
-          this.velocityX = this.baseVelocityX;
-        }
-        if (this.velocityY < 0) {
-          this.velocityY = -this.baseVelocityY;
-        } else {
-          this.velocityY = this.baseVelocityY;
-        }
+        // this.velocityX -= directionX;
+        // this.velocityY -= directionY;
+        this.x -= directionX;
+        this.y -= directionY;
       }
+      // else {
+      //   // Reset to base velocity when outside radius
+      //   if (this.velocityX < 0) {
+      //     this.velocityX = -this.baseVelocityX;
+      //   } else {
+      //     this.velocityX = this.baseVelocityX;
+      //   }
+      //   if (this.velocityY < 0) {
+      //     this.velocityY = -this.baseVelocityY;
+      //   } else {
+      //     this.velocityY = this.baseVelocityY;
+      //   }
+      // }
     }
 
     // Apply velocity
+    // this.x = this.velocityX;
+    // this.y = this.velocityY;
     this.x += this.velocityX;
     this.y += this.velocityY;
   }

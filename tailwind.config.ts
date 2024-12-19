@@ -16,11 +16,13 @@ export default {
     extend: {
       fontFamily: {
         asap: ['"Asap Condensed"', 'sans-serif'],
+        montserrat: ['"Montserrat"', 'sans-serif'],
       },
       // https://vercel.com/design/color
       colors: {
         //My own colors:
         background: '#121212',
+        bgSecondary: '#212121',
         text: '#E0E0E0',
         'accent-blue': '#3498db',
         'accent-dark': '#2980b9',
@@ -28,6 +30,7 @@ export default {
         border: '#333333',
         'link-hover': '#5DADE2',
         error: '#e74c3c',
+        navy: '#003366',
         // Finish
         gray: colors.zinc,
         'gray-1000': 'rgb(17,17,19)',

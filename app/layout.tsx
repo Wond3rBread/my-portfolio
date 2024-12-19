@@ -2,6 +2,7 @@ import { NavBar } from '#/components/medium/navbar';
 import { Sidebar } from '#/components/medium/sidebar';
 import '#/styles/globals.css';
 import '@fontsource/asap-condensed';
+import '@fontsource/montserrat';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -27,10 +28,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className=" font-asap">
+    <html lang="en" className=" font-montserrat">
       <body className=" bg-background">
         <NavBar />
-        <Sidebar/>
+        <Sidebar />
         <div className="">{children}</div>
       </body>
     </html>
