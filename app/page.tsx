@@ -6,6 +6,8 @@ import ColorPalette from '#/components/ui/palette';
 import { NameHello } from '#/components/small/nameHello';
 import { About } from '#/components/medium/about';
 import BackgroundCanvas from '#/components/medium/backgroundCanvas';
+import { Skills } from '#/components/medium/skills';
+import { Projects } from '#/components/medium/projects';
 
 export default function Page() {
   return (
@@ -37,27 +39,44 @@ export default function Page() {
     // </div>
     // </div>
     <div className="">
-      {/* Landing page start */}
+      {/* Landing section start */}
       <div className="flex h-screen items-center  justify-center overflow-hidden bg-background">
         <div className=" z-10 ">
           <NameHello />
         </div>
         <BackgroundCanvas />
       </div>
-      {/* Landing page finish */}
+      {/* Landing section finish */}
 
-      {/* About page start  */}
+      {/* About section start  */}
 
       <div
         id="about"
-        className=" flex h-screen items-center justify-center bg-card-bg"
+        className=" flex items-center justify-center bg-card-bg py-20 lg:h-screen"
       >
         <About />
       </div>
 
-      {/* About page finish */}
+      {/* About section finish */}
 
-      {/* <ColorPalette /> */}
+      {/* Skillset section start */}
+      <div
+        id="skills"
+        className=" flex items-center justify-center bg-background py-20 lg:h-screen"
+      >
+        <Skills />
+      </div>
+
+      {/* Skillset section finish */}
+
+      {/* Projects section start */}
+      <div
+        id="projects"
+        className="flex items-center justify-center bg-card-bg py-20 lg:h-screen"
+      >
+        <Projects />
+      </div>
+      {/* Projects section finish */}
     </div>
   );
 }

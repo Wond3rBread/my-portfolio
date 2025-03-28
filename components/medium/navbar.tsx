@@ -62,7 +62,7 @@ export const NavBar = () => {
             onClick={closeMenu}
           >
             <a href={`#${id}`} onClick={(e) => smoothScrollTo(e, id)}>
-              {['About', 'Skills', 'Experience', 'Student'][index]}
+              {['About', 'Skills', 'Projects', 'Student'][index]}
             </a>
           </li>
         ))}
